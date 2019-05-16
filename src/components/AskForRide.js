@@ -79,7 +79,10 @@ class AskForRide extends Component {
       scope: clientConfig.scopes.join(' '),
       acrValues: {
         service: 'PASSENGER',
-        consent_ctx: 'country=sg',
+        consentContext: {
+          countryCode: 'SG',
+          currency: 'sg'
+        }
       }
     };
 
@@ -98,11 +101,7 @@ class AskForRide extends Component {
   }
 
   login() {
-    this.grabClient.getOpenIdConfiguration()
-      .then(() => {
-        this.grabClient.makeAuthorizationRequest(this.props.finishUri);
-      })
-      .catch(error => alert(error.toString()));
+    this.grabClient.makeAuthorizationRequest(this.props.finishUri);
   };
 
   onAirportChanged(e) {
