@@ -52,35 +52,34 @@ class ConfirmRide extends Component {
       scope: clientConfig.scopes.join(' '),
       acrValues: {
         service: 'PASSENGER',
-        consent_ctx: 'country=sg',
+        consentContext: {
+          countryCode: 'sg'
+        }
       }
     };
 
     this.grabClient = new GrabID(clientConfig.openIdUrl, appConfig);
 
-    this.grabClient.getOpenIdConfiguration()
+    this.grabClient.makeTokenRequest()
       .then(() => {
-        this.grabClient.makeTokenRequest()
-          .then(() => {
-            let tokenResult = GrabID.getResult();
-            window.fetch("https://" + clientConfig.grabApiDomain + "/grabid/v1/oauth2/userinfo", {
-              method: 'GET',
-              headers: {
-                'Accept-Content': 'application/json; charset=utf-8',
-                Authorization: "Bearer " + tokenResult.accessToken,
-              },
-              mode: 'cors',
-            })
-            .then((response) => { 
-              response.json().then((userInfo) => {
-                this.setState({
-                  userName: userInfo.name,
-                  userEmail: userInfo.email,
-                });
-              });
-            })
-          })
-      })
+        let tokenResult = GrabID.getResult();
+        window.fetch("https://" + clientConfig.grabApiDomain + "/grabid/v1/oauth2/userinfo", {
+          method: 'GET',
+          headers: {
+            'Accept-Content': 'application/json; charset=utf-8',
+            Authorization: "Bearer " + tokenResult.accessToken,
+          },
+          mode: 'cors',
+        })
+        .then((response) => { 
+          response.json().then((userInfo) => {
+            this.setState({
+              userName: userInfo.name,
+              userEmail: userInfo.email,
+            });
+          });
+        })
+      });
   }
   
   render() {

@@ -9,8 +9,8 @@
 import * as GrabID from '@grab-id/grab-id-client/dist/bundle';
 
 export const clientConfig = {
-  openIdUrl: GrabID.getGrabUrls().PRODUCTION,
-  grabApiDomain: 'api.grab.com',
+  openIdUrl: GrabID.GrabPartnerUrls.PRODUCTION,
+  grabApiDomain: 'partner-gateway.grab.com',
   clientId: '6b3e342dca0a46d7a1d8ce2ff11420fa',
   scopes: ['openid', 'profile.read', 'ride.book'],
 };
