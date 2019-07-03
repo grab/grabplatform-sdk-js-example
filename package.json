@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@grab-id/grab-id-client": "^1.1.1",
+    "@grab-id/grab-id-client": "^1.1.4",
     "@material-ui/core": "^3.1.2",
     "@material-ui/icons": "^3.0.1",
     "memoize-one": "^4.0.2",

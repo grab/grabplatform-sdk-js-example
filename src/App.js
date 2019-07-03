@@ -18,6 +18,8 @@ import ConfirmRide from './components/ConfirmRide';
 import 'typeface-roboto';
 import { withStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import Refused from './components/Refused';
+import ErrorPage from './components/ErrorPage';
 
 const styles = theme => ({
   layout: {
@@ -95,6 +97,17 @@ class App extends Component {
                       onGoHome={() => history.push(`/${encodeURIComponent(match.params.date)}`)}
                     />
                   }
+                />
+                <Route exact
+                  path='/refused'
+                  render={({match, history}) => 
+                  <Refused
+                    onGoHome={() => history.push(`/`)}
+                  />}
+                />
+                <Route exact
+                  path='/error'
+                  render={() => <ErrorPage />}
                 />
                 <Route exact 
                   path='/:date?' 
