@@ -88,28 +88,10 @@ const destinations = [{
     id: 15, 
 }];
 
-// function returns a promise with an array of destinations
-export function filterDestinations(selectedDate) {
-    console.log(`Filtering destinations for ${selectedDate}`);
+export function filterDestinations() {
+    let beginDest = Math.floor(Math.random() * 10);
     // We transform the string into an arraybuffer.
-    var buffer = new TextEncoder("utf-8").encode(selectedDate);
-    return crypto.subtle.digest("SHA-256", buffer).then(function (hash) {
-        if (!selectedDate) {
-            return [];
-        }
-        const hashArray = Array.from(new Uint8Array(hash));
-        const modulo1 = hashArray[0] % 5;
-        const modulo2 = hashArray[1] % 7;
-        const modulo3 = hashArray[2] % 9;
-        let returnDestinations = [];
-        for (let i = 0; i < destinations.length; i += 1) {
-            if (i % 5 === modulo1 || i % 7 === modulo2 || i % 9 === modulo3) {
-                returnDestinations.push(destinations[i]);
-            }
-        }
-        console.log(`Generated ${returnDestinations.length} destinations.`)
-        return returnDestinations;
-    });          
+    return destinations.slice(beginDest, beginDest + 7);
 }
 
 export function getDestination(num) {

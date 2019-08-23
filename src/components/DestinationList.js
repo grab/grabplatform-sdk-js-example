@@ -67,10 +67,7 @@ class DestinationList extends Component {
   }
 
   filterDestinationsMemoized = memoizeOne((date, dest) => 
-    filterDestinations(date)
-      .then(destinations => {
-        this.setState({destinations});
-      })
+    this.setState({ destinations: filterDestinations() })
   );
 
   onSearchInputChange =
