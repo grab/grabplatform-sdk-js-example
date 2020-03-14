@@ -846,12 +846,13 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@grab-id/grab-id-client@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@grab-id/grab-id-client/-/grab-id-client-1.1.1.tgz#f14476c3bc49256f28e9ea2c9546065320bb69e9"
-  integrity sha512-y3pWgIOMa/FaZ7ltSxeQdOUKYC1ca5pgu6EZPY8sMRsgV+g/SAPsFDKvhNlS2Ihy6okJ0uIYaN4+xdH4i79VqQ==
+"@grab-id/grab-id-client@^1.1.4":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@grab-id/grab-id-client/-/grab-id-client-1.1.9.tgz#b8b545bed5fc91ae05ffb70087610a27f7e799a1"
+  integrity sha512-UJB7gHtTaISjVlCHFu7kkv6bJ3j3qYxkHhuyJ6vcqwDTaIAKR6uBZoywbnq61LGdei4w4qdxUgezGatlI1PgPw==
   dependencies:
     crypto-js "^3.1.9-1"
+    whatwg-fetch "^3.0.0"
 
 "@material-ui/core@^3.1.2":
   version "3.9.1"
@@ -1190,9 +1191,9 @@ acorn-walk@^6.0.1:
   integrity sha512-OtUw6JUTgxA2QoqqmrmQ7F2NYqiBPi/L2jqHyFtllhOUvXYQXf0Z1CYUinIfyT4bTCGmrA7gX9FvHA81uzCoVw==
 
 acorn@^5.0.0, acorn@^5.5.3, acorn@^5.6.2:
-  version "5.7.3"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.3.tgz#67aa231bf8812974b85235a96771eb6bd07ea279"
-  integrity sha512-T/zvzYRfbVojPWahDsE5evJdHb3oJoQfFbsrKM7w5Zcs++Tr257tia3BmMP8XYVjp1S9RZXQMh7gao96BlqZOw==
+  version "5.7.4"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.4.tgz#3e8d8a9947d0599a1796d10225d7432f4a4acf5e"
+  integrity sha512-1D++VG7BhrtvQpNbBzovKNc1FLGGEE/oGe7b9xJm/RFHMBeUaUGpluV9RLjZa47YFdPcDAenEYuq9pQPcMdLJg==
 
 acorn@^6.0.1, acorn@^6.0.2, acorn@^6.0.4:
   version "6.0.5"
@@ -10111,7 +10112,7 @@ whatwg-encoding@^1.0.1, whatwg-encoding@^1.0.3, whatwg-encoding@^1.0.5:
   dependencies:
     iconv-lite "0.4.24"
 
-whatwg-fetch@3.0.0, whatwg-fetch@>=0.10.0:
+whatwg-fetch@3.0.0, whatwg-fetch@>=0.10.0, whatwg-fetch@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.0.0.tgz#fc804e458cc460009b1a2b966bc8817d2578aefb"
   integrity sha512-9GSJUgz1D4MfyKU7KRqwOjXCXTqWdFNvEr7eUBYchQiVc744mqK/MzXPNR2WsPkmkOa4ywfg8C2n8h+13Bey1Q==
