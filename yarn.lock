@@ -846,12 +846,13 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@grab-id/grab-id-client@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@grab-id/grab-id-client/-/grab-id-client-1.1.1.tgz#f14476c3bc49256f28e9ea2c9546065320bb69e9"
-  integrity sha512-y3pWgIOMa/FaZ7ltSxeQdOUKYC1ca5pgu6EZPY8sMRsgV+g/SAPsFDKvhNlS2Ihy6okJ0uIYaN4+xdH4i79VqQ==
+"@grab-id/grab-id-client@^1.1.4":
+  version "1.1.10"
+  resolved "https://registry.yarnpkg.com/@grab-id/grab-id-client/-/grab-id-client-1.1.10.tgz#79643f3c997077383348097c933cc66e29d6aad9"
+  integrity sha512-h7W+c9Yal9R7a12NznLCPbnX7PudTRw4+kgbNAqv0GmhSKIfpW3NraaRQkMdHUUcqhIos0IJ8VFwz645lPzRUQ==
   dependencies:
     crypto-js "^3.1.9-1"
+    whatwg-fetch "^3.0.0"
 
 "@material-ui/core@^3.1.2":
   version "3.9.1"
@@ -10116,6 +10117,11 @@ whatwg-fetch@3.0.0, whatwg-fetch@>=0.10.0:
   resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.0.0.tgz#fc804e458cc460009b1a2b966bc8817d2578aefb"
   integrity sha512-9GSJUgz1D4MfyKU7KRqwOjXCXTqWdFNvEr7eUBYchQiVc744mqK/MzXPNR2WsPkmkOa4ywfg8C2n8h+13Bey1Q==
 
+whatwg-fetch@^3.0.0:
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.6.2.tgz#dced24f37f2624ed0281725d51d0e2e3fe677f8c"
+  integrity sha512-bJlen0FcuU/0EMLrdbJ7zOnW6ITZLrZMIarMUVmdKtsGvZna8vxKYaexICWPfZ8qwf9fzNq+UEIZrnSaApt6RA==
+
 whatwg-mimetype@^2.1.0, whatwg-mimetype@^2.2.0, whatwg-mimetype@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/whatwg-mimetype/-/whatwg-mimetype-2.3.0.tgz#3d4b1e0312d2079879f826aff18dbeeca5960fbf"
@@ -10366,9 +10372,9 @@ xtend@^4.0.0, xtend@~4.0.1:
   integrity sha1-pcbVMr5lbiPbgg77lDofBJmNY68=
 
 y18n@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
-  integrity sha1-bRX7qITAhnnA136I53WegR4H+kE=
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.2.tgz#85c901bd6470ce71fc4bb723ad209b70f7f28696"
+  integrity sha512-uGZHXkHnhF0XeeAPgnKfPv1bgKAYyVvmNL1xlKsPYZPaIHxGti2hHqvOCQv71XMsLxu1QjergkqogUnms5D3YQ==
 
 "y18n@^3.2.1 || ^4.0.0", y18n@^4.0.0:
   version "4.0.0"
